@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Covid-19 Cases</title>
+    <meta name="description" content="Check the stats of covid 19 around the world"> 
+    <meta name="author" content="Spirit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="product-header">
+      <div class="product-content">
+        <div class="logo">
+          <a href="index.html"><h1>Covid-19 Cases</h1></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <nav aria-label="Primary" class="navigation">
+          <ul class="menu">
+            <li><a href="#">Vaccination</a>
+              <ul class="submenu">
+                <li><a href="#">North America</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">Asia</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    
+        <div class="sidebar">
+          
+          <section id="covid-container">
+
+            
+
+            <form class="filters">
+              <h2>Filters</h2>
+
+              <div class="search-nav">
+                <fieldset>
+                  <legend>Search</legend>
+                  <ul class="filter-list">
+                    <label>
+                      <input type="search" name="find" id="find">
+                    </label>
+                    <button type="button"><i class="fa fa-search"></i></button> 
+                  </ul>
+                </fieldset>
+              </div>
+    
+              <div class="filter-options">
+                <fieldset>
+                  <legend>Search by top countries</legend>
+                  <ul class="filter-list">
+                    <li><input type="checkbox" name="categorie" >USA</label></li>
+                    <li><input type="checkbox" name="categorie"> <label>India</label></li>
+                    <li><input type="checkbox" name="categorie"> <label >Brazil</label></li>
+                    <li><input type="checkbox" name="categorie"> <label >Canda</label></li>
+                    <li><input type="checkbox" name="categorie"> <label >Greece</label></li>
+                    <li><input type="checkbox" name="categorie" > <label >Russia</label></li>
+                    <li><input type="checkbox" name="categorie"> <label >Japan</label></li>
+                  </ul>
+                </fieldset>
+                
+              </div>
+              <fieldset>
+                <label for="sort">Filter By</label>
+                <select name="sort" id="sort">
+                  <option value="low">lowest to highest</option>
+                  <option value="high">highest to lowest</option>
+            
+                </select>
+    
+                <section><label for="filterPr">Maximum Cases</label>
+                <input class="filteredCases" type="range" name="cases" id="filteredcases" value="1000000000" min="20" max="1000000000" step="10">
+                <output for="filteredCases">1000000000</output>
+              </section>
+              </fieldset>
+            </form>
+
+            
+        </div>
+        <h2 class="subheading">Results</h2>
+        <section class="results">
+        </section>
+    
+        <footer>
+          <nav class="footer">
+            <p>Copyright (c) 1970</p>
+            <a href="#">Terms</a>|<a href="#" >Privacy</a>
+          </nav>
+          <div class="logo">
+            <div class="footer-right">  
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square" ></i></a>
+                <a href="http://instagram.com/"><i class="fab fa-instagram-square" ></i></a>         
+              </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </div>
+    </main>
+  </body>
+</html>
